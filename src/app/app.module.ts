@@ -6,13 +6,19 @@ import { HeaderComponent } from './components/shared/header/header.component';
 import { SidebarComponent } from './components/shared/sidebar/sidebar.component';
 import { DefaultComponent } from './components/pages/default/default.component';
 import { app_routing } from './app.routes';
+import { LogueadoComponent } from './components/logueado/logueado.component';
+import { LoginComponent } from './components/login/login.component';
+import { ListadoComponent } from './components/pages/listado/listado.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     SidebarComponent,
-    DefaultComponent
+    DefaultComponent,
+    LogueadoComponent,
+    LoginComponent,
+    ListadoComponent
   ],
   imports: [
     BrowserModule,
