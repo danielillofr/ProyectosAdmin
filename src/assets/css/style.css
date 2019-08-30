@@ -7632,7 +7632,8 @@ label {
   margin-bottom: .5rem; }
 
 button {
-  border-radius: 0; }
+  border-radius: 0; 
+  cursor: pointer}
 
 button:focus {
   outline: 1px dotted;
@@ -7919,7 +7920,9 @@ pre {
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
-  margin-left: auto; }
+  margin-left: auto; 
+  background: #004eff;
+}
 
 .row {
   display: flex;
@@ -13478,14 +13481,14 @@ input:focus {
   background: linear-gradient(to right, rgba(240, 147, 251, 0.9), rgba(245, 87, 108, 0.9)); }
 
 .sidebar-grdient-dark, .sidebar {
-  background: #6a008a;
-  background: -moz-linear-gradient(top, #6a008a 0%, #6a008a 20%, #fa0053 100%);
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, #6a008a), color-stop(20%, #6a008a), color-stop(100%, #fa0053));
-  background: -webkit-linear-gradient(top, #6a008a 0%, #6a008a 20%, #fa0053 100%);
-  background: -o-linear-gradient(top, #6a008a 0%, #6a008a 20%, #fa0053 100%);
-  background: -ms-linear-gradient(top, #6a008a 0%, #6a008a 20%, #fa0053 100%);
-  background: linear-gradient(to bottom, #6a008a 0%, #6a008a 20%, #fa0053 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6a008a', endColorstr='#fa0053', GradientType=0 );
+  background: #001137;
+  background: -moz-linear-gradient(top, #001137 0%, #001137 20%, #004eff 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #001137), color-stop(20%, #001137), color-stop(100%, #004eff));
+  background: -webkit-linear-gradient(top, #001137 0%, #001137 20%, #004eff 100%);
+  background: -o-linear-gradient(top, #001137 0%, #001137 20%, #004eff 100%);
+  background: -ms-linear-gradient(top, #001137 0%, #001137 20%, #004eff 100%);
+  background: linear-gradient(to bottom, #001137 0%, #001137 20%, #004eff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001137', endColorstr='#004eff', GradientType=0 );
   color: #ffffff; }
 
 /* Sidebar */
@@ -13718,7 +13721,7 @@ input:focus {
 /* Navbar */
 .navbar {
   font-family: "pt-sans-regular", sans-serif;
-  background: #ffffff;
+  background: #001137;
   -webkit-box-shadow: 0px 8px 74px -21px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0px 8px 74px -21px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 8px 74px -21px rgba(0, 0, 0, 0.15);
@@ -13731,7 +13734,7 @@ input:focus {
     -webkit-transition: width 0.25s ease, background 0.25s ease;
     -moz-transition: width 0.25s ease, background 0.25s ease;
     -ms-transition: width 0.25s ease, background 0.25s ease;
-    background: #ffffff;
+    background: #001137;
     width: 247px;
     height: 59px; }
     .sidebar-light .navbar .navbar-brand-wrapper {
@@ -13842,7 +13845,7 @@ input:focus {
         .navbar .navbar-menu-wrapper .navbar-nav .nav-item:last-child {
           border-right: none; }
         .navbar .navbar-menu-wrapper .navbar-nav .nav-item .nav-link {
-          color: inherit;
+          color: white;
           font-size: 0.9375rem;
           margin-left: 1rem;
           margin-right: 1rem;
@@ -14106,7 +14109,7 @@ html {
   overflow: auto !important; }
 
 .content-wrapper {
-  background: #F6F8FA;
+  background: #E0F0FF;
   margin-left: 247px;
   min-height: 100vh;
   padding: 1.5rem 1.7rem;
