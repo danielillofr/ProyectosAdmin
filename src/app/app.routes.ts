@@ -4,6 +4,10 @@ import { DefaultComponent } from './components/pages/default/default.component';
 import { LogueadoComponent } from './components/logueado/logueado.component';
 import { LoginComponent } from './components/login/login.component';
 import { ListadoComponent } from './components/pages/listado/listado.component';
+import { CreateProjectComponent } from './components/pages/create-project/create-project.component';
+import { ListProjectsComponent } from './components/pages/list-projects/list-projects.component';
+import { StatisticsComponent } from './components/pages/statistics/statistics.component';
+import { ProfileComponent } from './components/pages/profile/profile.component';
 
 const routes: Routes = [
     { path: '', component: LoginComponent },
@@ -15,8 +19,23 @@ const routes: Routes = [
                 component: DefaultComponent
             },
             {
-                path: 'pepito',
-                component: ListadoComponent
+                path: 'createproject',
+                component: CreateProjectComponent
+
+            },
+            {
+                path: 'listprojects',
+                component: ListProjectsComponent
+
+            },
+            {
+                path: 'statistics',
+                component: StatisticsComponent
+
+            },
+            {
+                path: 'profile',
+                component: ProfileComponent
 
             },
             {

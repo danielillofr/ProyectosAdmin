@@ -1,26 +1,32 @@
 <div class="row">
     <div class="col-md-4 stretch-card grid-margin">
         <div class="card bg-gradient-warning text-white">
-        <div class="card-body">
+        <a class="nav-link"  [routerLink]="['/pages','createproject']">
+          <div class="card-body">
             <br><br>
-            <h2 class="font-weight-normal mb-5" style="text-align: center">Crear proyecto</h2>
-        </div>
+            <h2 class="font-weight-normal mb-5" style="text-align: center; color:white">Crear proyecto</h2>
+          </div>
+        </a>
         </div>
     </div>
     <div class="col-md-4 stretch-card grid-margin">
         <div class="card bg-gradient-info text-white">
-        <div class="card-body">
-            <br><br>
-            <h2 class="font-weight-normal mb-5" style="text-align: center">Listado de proyectos</h2>
-        </div>
+          <a class="nav-link" [routerLink]="[ '/pages', 'listprojects' ]">
+            <div class="card-body">
+              <br><br>
+              <h2 class="font-weight-normal mb-5" style="text-align: center; color:white">Listado de proyectos</h2>
+            </div>
+          </a>
         </div>
     </div>
     <div class="col-md-4 stretch-card grid-margin">
         <div class="card bg-gradient-success text-white">
-        <div class="card-body">
-            <br><br>
-            <h2 class="font-weight-normal mb-5" style="text-align: center">Estadísticas</h2>
-        </div>
+          <a class="nav-link" [routerLink]="[ '/pages', 'statistics' ]">
+            <div class="card-body">
+              <br><br>
+              <h2 class="font-weight-normal mb-5" style="text-align: center; color:white">Estadísticas</h2>
+            </div>
+          </a>
         </div>
     </div>
 </div>
