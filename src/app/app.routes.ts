@@ -7,6 +7,8 @@ import { CreateProjectComponent } from './components/pages/create-project/create
 import { ListProjectsComponent } from './components/pages/list-projects/list-projects.component';
 import { StatisticsComponent } from './components/pages/statistics/statistics.component';
 import { ProfileComponent } from './components/pages/profile/profile.component';
+import { DetailProjectComponent } from './components/pages/project/detail-project/detail-project.component';
+import { ProjectComponent } from './components/pages/project/project/project.component';
 
 const routes: Routes = [
     { path: '', component: LoginComponent },
@@ -36,6 +38,16 @@ const routes: Routes = [
                 path: 'profile',
                 component: ProfileComponent
 
+            },
+            {
+                path: 'project/:id',
+                component: ProjectComponent,
+                children:[
+                    {
+                        path: 'detail',
+                        component: DetailProjectComponent
+                    }
+                ]
             },
             {
                 path: '**',

@@ -12,6 +12,12 @@ import { CreateProjectComponent } from './components/pages/create-project/create
 import { ListProjectsComponent } from './components/pages/list-projects/list-projects.component';
 import { StatisticsComponent } from './components/pages/statistics/statistics.component';
 import { ProfileComponent } from './components/pages/profile/profile.component';
+import { DetailProjectComponent } from './components/pages/project/detail-project/detail-project.component';
+import { ProjectComponent } from './components/pages/project/project/project.component';
+import { BarraComponent } from './components/pages/project/barra/barra.component';
+import { DocumentsComponent } from './components/pages/project/documents/documents.component';
+import { ReportsComponent } from './components/pages/project/reports/reports.component';
+import { LogComponent } from './components/pages/project/log/log.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +30,13 @@ import { ProfileComponent } from './components/pages/profile/profile.component';
     CreateProjectComponent,
     ListProjectsComponent,
     StatisticsComponent,
-    ProfileComponent
+    ProfileComponent,
+    DetailProjectComponent,
+    ProjectComponent,
+    BarraComponent,
+    DocumentsComponent,
+    ReportsComponent,
+    LogComponent
   ],
   imports: [
     BrowserModule,

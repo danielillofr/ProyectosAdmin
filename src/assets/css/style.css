@@ -15304,6 +15304,10 @@ dl {
     .table.table-borderless tr, .table.table-borderless td, .table.table-borderless th {
       border: none; }
 
+
+.botonActivo {
+  color: #965496;
+}
 /*-------------------------------------------------------------------*/
 
 /*# sourceMappingURL=maps/style.css.map */
