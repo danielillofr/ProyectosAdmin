@@ -14368,7 +14368,7 @@ pre {
   .btn.btn-rounded {
     border-radius: 50px; }
   .btn.btn-fw {
-    min-width: 120px; }
+    width: 113px; }
   .btn.icon-btn i {
     margin-right: 0; }
   .btn.social-btn {
@@ -15314,6 +15314,13 @@ dl {
 .botonActivo {
   color: #965496;
 }
+
+@media screen and (max-width: 1125px) {
+  .cajaFases {
+    display: none;
+  }
+}
+
 /*-------------------------------------------------------------------*/
 
 /*# sourceMappingURL=maps/style.css.map */

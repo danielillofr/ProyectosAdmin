@@ -6,7 +6,7 @@ import { HeaderComponent } from './components/shared/header/header.component';
 import { SidebarComponent } from './components/shared/sidebar/sidebar.component';
 import { DefaultComponent } from './components/pages/default/default.component';
 import { app_routing } from './app.routes';
-import { LogueadoComponent } from './components/logueado/logueado.component';
+import { PagesComponent } from './components/pages/pages/pages.component';
 import { LoginComponent } from './components/login/login.component';
 import { CreateProjectComponent } from './components/pages/create-project/create-project.component';
 import { ListProjectsComponent } from './components/pages/list-projects/list-projects.component';
@@ -25,7 +25,7 @@ import { LogComponent } from './components/pages/project/log/log.component';
     HeaderComponent,
     SidebarComponent,
     DefaultComponent,
-    LogueadoComponent,
+    PagesComponent,
     LoginComponent,
     CreateProjectComponent,
     ListProjectsComponent,

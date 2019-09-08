@@ -2,10 +2,10 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-logueado',
-  templateUrl: './logueado.component.html',
+  templateUrl: './pages.component.html',
   styles: []
 })
-export class LogueadoComponent implements OnInit {
+export class PagesComponent implements OnInit {
 
   constructor() { }
 
