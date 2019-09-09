@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+.botonActivo {
+    color: #965496;
+  }
+  
+  @media screen and (max-width: 1125px) {
+    .cajaFases {
+      display: none;
+    }
+  }
+  
+  /* Fases */
+
+  .cardFases {
+    background-color: #7a88ac;}
+    .cardFases h3 {
+      color: #d5d4e3;
+    }
+    .cardTitleCenter {
+      text-align: center;
+    } 
+  
+

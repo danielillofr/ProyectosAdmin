@@ -15311,15 +15311,7 @@ dl {
       border: none; }
 
 
-.botonActivo {
-  color: #965496;
-}
 
-@media screen and (max-width: 1125px) {
-  .cajaFases {
-    display: none;
-  }
-}
 
 /*-------------------------------------------------------------------*/
 
