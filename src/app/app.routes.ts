@@ -1,17 +1,18 @@
 import { Routes, RouterModule } from '@angular/router';
 
-import { DefaultComponent } from './components/pages/default/default.component';
+import { DefaultComponent } from './components/pages/subpages/default/default.component';
 import { LoginComponent } from './components/login/login.component';
-import { CreateProjectComponent } from './components/pages/create-project/create-project.component';
-import { ListProjectsComponent } from './components/pages/list-projects/list-projects.component';
-import { StatisticsComponent } from './components/pages/statistics/statistics.component';
-import { ProfileComponent } from './components/pages/profile/profile.component';
-import { DetailProjectComponent } from './components/pages/project/detail-project/detail-project.component';
-import { ProjectComponent } from './components/pages/project/project/project.component';
-import { DocumentsComponent } from './components/pages/project/documents/documents.component';
-import { LogComponent } from './components/pages/project/log/log.component';
-import { ReportsComponent } from './components/pages/project/reports/reports.component';
+import { CreateProjectComponent } from './components/pages/subpages/create-project/create-project.component';
+import { ListProjectsComponent } from './components/pages/subpages/list-projects/list-projects.component';
+import { StatisticsComponent } from './components/pages/subpages/statistics/statistics.component';
+import { ProfileComponent } from './components/pages/subpages/profile/profile.component';
+import { DetailProjectComponent } from './components/pages/subpages/project/subpages/details/detail-project/detail-project.component';
+import { ProjectComponent } from './components/pages/subpages/project/project/project.component';
+import { DocumentsComponent } from './components/pages/subpages/project/subpages/documents/documents.component';
+import { LogComponent } from './components/pages/subpages/project/subpages/log/log.component';
+import { ReportsComponent } from './components/pages/subpages/project/subpages/reports/reports.component';
 import { PagesComponent } from './components/pages/pages/pages.component';
+import { Fase1Component } from './components/pages/subpages/project/subpages/details/subpages/fase1/fase1.component';
 
 
 const routes: Routes = [
@@ -50,6 +51,16 @@ const routes: Routes = [
                     {
                         path: '',
                         component: DetailProjectComponent
+                    },
+                    {
+                        path: 'detail',
+                        component: DetailProjectComponent,
+                        children: [
+                            {
+                                path:'f1',
+                                component: Fase1Component
+                            }
+                        ]
                     },
                     {
                         path: 'documents',
