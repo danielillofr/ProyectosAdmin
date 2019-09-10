@@ -16,8 +16,16 @@
     .cardFases h3 {
       color: #d5d4e3;
     }
-    .cardTitleCenter {
-      text-align: center;
-    } 
+  .cardTitleCenter {
+    text-align: center;
+  } 
+  .tableAnalisis {
+    border: #716db0;
+    border-block-style: solid;
+  }
+
+  .margenSup {
+    padding-top: 10px;
+  }
   
 

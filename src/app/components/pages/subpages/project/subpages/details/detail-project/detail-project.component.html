@@ -24,6 +24,16 @@
                         </div>
                 </div>
         </div>
+        <div class="col-md-3" style="min-width: 208px">
+                <div class="card bg-gradient-warning stretch-card grid-margin">
+
+                        <div class="card-body" style="text-align:center; height: 182px;">
+                                <h3>Jefe de proyecto</h3>
+                                <h4 style="color: white">María José Barquero</h4>
+                                <!-- <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer> -->
+                        </div>
+                </div>
+        </div>
 </div>            
 
 <hr>
@@ -35,9 +45,10 @@
                 <div class="col-md-12" style="min-width: 805px">
                         <button [routerLink]="['f1']" type="button" class="btn btn-primary btn-rounded  btn-fw">Creación</button>
                         <i class="mdi mdi-chevron-double-right"></i>
-                        <button type="button" class="btn btn-primary btn-rounded  btn-fw">Recop.</button>
+                        <button [routerLink]="['f2']" type="button" class="btn btn-primary btn-rounded  btn-fw">Recop.</button>
                         <i class="mdi mdi-chevron-double-right"></i>
-                        <button type="button" class="btn btn-secundary btn-rounded  btn-fw" style="cursor:default" disabled>Análisis</button>
+                        <button [routerLink]="['f3']" type="button" class="btn btn-primary btn-rounded  btn-fw">Análisis</button>
+                        <!-- <button type="button" class="btn btn-secundary btn-rounded  btn-fw" style="cursor:default" disabled>Análisis</button> -->
                         <i class="mdi mdi-chevron-double-right"></i>
                         <button type="button" class="btn btn-secundary btn-rounded  btn-fw" style="cursor:default" disabled>Aprobación</button>
                         <i class="mdi mdi-chevron-double-right"></i>

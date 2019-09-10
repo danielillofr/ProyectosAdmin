@@ -13,6 +13,8 @@ import { LogComponent } from './components/pages/subpages/project/subpages/log/l
 import { ReportsComponent } from './components/pages/subpages/project/subpages/reports/reports.component';
 import { PagesComponent } from './components/pages/pages/pages.component';
 import { Fase1Component } from './components/pages/subpages/project/subpages/details/subpages/fase1/fase1.component';
+import { Fase2Component } from './components/pages/subpages/project/subpages/details/subpages/fase2/fase2.component';
+import { Fase3Component } from './components/pages/subpages/project/subpages/details/subpages/fase3/fase3.component';
 
 
 const routes: Routes = [
@@ -59,6 +61,14 @@ const routes: Routes = [
                             {
                                 path:'f1',
                                 component: Fase1Component
+                            },
+                            {
+                                path: 'f2',
+                                component: Fase2Component
+                            },
+                            {
+                                path: 'f3',
+                                component: Fase3Component
                             }
                         ]
                     },

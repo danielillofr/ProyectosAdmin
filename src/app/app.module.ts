@@ -20,6 +20,8 @@ import { ReportsComponent } from './components/pages/subpages/project/subpages/r
 import { LogComponent } from './components/pages/subpages/project/subpages/log/log.component';
 import { Fase1Component } from './components/pages/subpages/project/subpages/details/subpages/fase1/fase1.component';
 import { BarraFasesComponent } from './components/pages/subpages/project/subpages/details/barra-fases/barra-fases.component';
+import { Fase2Component } from './components/pages/subpages/project/subpages/details/subpages/fase2/fase2.component';
+import { Fase3Component } from './components/pages/subpages/project/subpages/details/subpages/fase3/fase3.component';
 
 
 
@@ -42,7 +44,9 @@ import { BarraFasesComponent } from './components/pages/subpages/project/subpage
     ReportsComponent,
     LogComponent,
     BarraFasesComponent,
-    Fase1Component
+    Fase1Component,
+    Fase2Component,
+    Fase3Component
   ],
   imports: [
     BrowserModule,
