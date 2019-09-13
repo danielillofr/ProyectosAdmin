@@ -18,10 +18,8 @@ import { BarraComponent } from './components/pages/subpages/project/barra/barra.
 import { DocumentsComponent } from './components/pages/subpages/project/subpages/documents/documents.component';
 import { ReportsComponent } from './components/pages/subpages/project/subpages/reports/reports.component';
 import { LogComponent } from './components/pages/subpages/project/subpages/log/log.component';
-import { Fase1Component } from './components/pages/subpages/project/subpages/details/subpages/fase1/fase1.component';
 import { BarraFasesComponent } from './components/pages/subpages/project/subpages/details/barra-fases/barra-fases.component';
-import { Fase2Component } from './components/pages/subpages/project/subpages/details/subpages/fase2/fase2.component';
-import { Fase3Component } from './components/pages/subpages/project/subpages/details/subpages/fase3/fase3.component';
+import { FaseComponent } from './components/pages/subpages/project/subpages/details/subpages/fase/fase.component';
 
 
 
@@ -44,9 +42,7 @@ import { Fase3Component } from './components/pages/subpages/project/subpages/det
     ReportsComponent,
     LogComponent,
     BarraFasesComponent,
-    Fase1Component,
-    Fase2Component,
-    Fase3Component
+    FaseComponent
   ],
   imports: [
     BrowserModule,

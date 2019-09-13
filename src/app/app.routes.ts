@@ -12,9 +12,7 @@ import { DocumentsComponent } from './components/pages/subpages/project/subpages
 import { LogComponent } from './components/pages/subpages/project/subpages/log/log.component';
 import { ReportsComponent } from './components/pages/subpages/project/subpages/reports/reports.component';
 import { PagesComponent } from './components/pages/pages/pages.component';
-import { Fase1Component } from './components/pages/subpages/project/subpages/details/subpages/fase1/fase1.component';
-import { Fase2Component } from './components/pages/subpages/project/subpages/details/subpages/fase2/fase2.component';
-import { Fase3Component } from './components/pages/subpages/project/subpages/details/subpages/fase3/fase3.component';
+import { FaseComponent } from './components/pages/subpages/project/subpages/details/subpages/fase/fase.component';
 
 
 const routes: Routes = [
@@ -22,82 +20,29 @@ const routes: Routes = [
     { path: 'pages', 
         component: PagesComponent,
         children:[
-            {
-                path: '',
-                component: DefaultComponent
-            },
-            {
-                path: 'createproject',
-                component: CreateProjectComponent
-
-            },
-            {
-                path: 'listprojects',
-                component: ListProjectsComponent
-
-            },
-            {
-                path: 'statistics',
-                component: StatisticsComponent
-
-            },
-            {
-                path: 'profile',
-                component: ProfileComponent
-
-            },
-            {
-                path: 'project/:id',
-                component: ProjectComponent,
+            {path: '', component: DefaultComponent},
+            {path: 'createproject', component: CreateProjectComponent},
+            {path: 'listprojects', component: ListProjectsComponent},
+            {path: 'statistics', component: StatisticsComponent},
+            {path: 'profile', component: ProfileComponent},
+            {path: 'project/:idProyecto', component: ProjectComponent,
                 children:[
-                    {
-                        path: '',
-                        component: DetailProjectComponent
-                    },
-                    {
-                        path: 'detail',
-                        component: DetailProjectComponent,
+                    {path: '', component: DetailProjectComponent},
+                    {path: 'detail', component: DetailProjectComponent,
                         children: [
-                            {
-                                path:'f1',
-                                component: Fase1Component
-                            },
-                            {
-                                path: 'f2',
-                                component: Fase2Component
-                            },
-                            {
-                                path: 'f3',
-                                component: Fase3Component
-                            }
+                            {path:'fase/:fase', component: FaseComponent},
                         ]
                     },
-                    {
-                        path: 'documents',
-                        component: DocumentsComponent
-                    },
-                    {
-                        path:'log',
-                        component: LogComponent
-                    },
-                    {
-                        path: 'reports',
-                        component: ReportsComponent
+                    {path: 'documents', component: DocumentsComponent},
+                    {path:'log', component: LogComponent},
+                    {path: 'reports', component: ReportsComponent
                     }
                 ]
             },
-            {
-                path: '**',
-                component: DefaultComponent
-            }
+            {path: '**', component: DefaultComponent}
         ] },
     { path: '**', component: LoginComponent },
 
-    //{ path: 'path/:routeParam', component: MyComponent },
-    //{ path: 'staticPath', component: ... },
-    //{ path: '**', component: ... },
-    //{ path: 'oldPath', redirectTo: '/staticPath' },
-    //{ path: ..., component: ..., data: { message: 'Custom' }
 ];
 
 export const app_routing = RouterModule.forRoot(routes);

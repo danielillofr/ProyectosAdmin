@@ -14,7 +14,8 @@ export class ProjectComponent implements OnInit {
   
   ngOnInit() {
     this._activatedRoute.params.subscribe((params) => {
-      this.idProjecto = params.id;
+      console.log('Desde el component projecto:', params);
+      this.idProjecto = params.idProyecto;
     })
   }
 

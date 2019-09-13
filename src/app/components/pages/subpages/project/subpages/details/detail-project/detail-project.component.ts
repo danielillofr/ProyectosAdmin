@@ -13,9 +13,8 @@ export class DetailProjectComponent implements OnInit {
   constructor(private _router: ActivatedRoute) { }
 
   ngOnInit() {
-    this._router.params.subscribe((params) => {
-      console.log(params.id);
-      this.idProyecto = params.id;
+    this._router.parent.params.subscribe((params) => {
+      this.idProyecto = params.idProyecto;
     })
   }
 

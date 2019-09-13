@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-barra-fases',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BarraFasesComponent implements OnInit {
 
-  constructor() { }
+  @Input() idProyecto: String = '';
+
+
+
+  constructor() {  }
 
   ngOnInit() {
   }
